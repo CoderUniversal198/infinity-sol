@@ -15,7 +15,7 @@ NovaWorks CRM is an AI-assisted project management application developed by 404 
 | Muhammad Abdullah | Team Leader |
 | Haseeb Alam | Team Member |
 
----
+Video Link: https://drive.google.com/file/d/1UzZGyTRmhmXmfdeR4sqxvejbzz39kYiw/view?usp=drive_link
 
 ## Project Overview
 
