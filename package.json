@@ -1,0 +1,48 @@
+{
+  "name": "novaworks-crm",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:integration": "node --import tsx tests/integration.ts",
+    "test:live-ai": "node --env-file=.env.local --import tsx scripts/check-live-ai.ts",
+    "seed": "node scripts/seed.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "1.1.2",
+    "@supabase/supabase-js": "2.57.4",
+    "bcryptjs": "2.4.3",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "jose": "5.9.6",
+    "lucide-react": "0.468.0",
+    "next": "14.2.35",
+    "pg": "8.20.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "server-only": "0.0.1",
+    "tailwind-merge": "2.6.0",
+    "tailwindcss-animate": "1.0.7",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.3.14",
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "22.14.0",
+    "@types/pg": "8.15.5",
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6",
+    "autoprefixer": "10.4.21",
+    "postcss": "8.5.3",
+    "tailwindcss": "3.4.17",
+    "tsx": "4.20.6",
+    "typescript": "5.8.3"
+  }
+}

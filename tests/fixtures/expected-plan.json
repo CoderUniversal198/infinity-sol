@@ -1,0 +1,115 @@
+{
+  "projects": [
+    {
+      "name": "UrbanCart Website",
+      "clientName": "UrbanCart Clothing",
+      "description": "Responsive product browsing and a demo cart. Real payments and inventory integration are excluded.",
+      "managerId": "PM01",
+      "deadline": "2026-10-20",
+      "tasks": [
+        {
+          "title": "Product catalog UI",
+          "description": "Product listing, detail screen, and responsive layout.",
+          "assigneeId": "DEV01",
+          "deadline": "2026-10-12",
+          "estimatedHours": 12
+        },
+        {
+          "title": "Demo cart UI",
+          "description": "Add and remove items, manage quantities, and show a visible total.",
+          "assigneeId": "DEV01",
+          "deadline": "2026-10-15",
+          "estimatedHours": 8
+        },
+        {
+          "title": "Product and cart APIs",
+          "description": "Product data and basic demo cart endpoints.",
+          "assigneeId": "DEV02",
+          "deadline": "2026-10-14",
+          "estimatedHours": 14
+        },
+        {
+          "title": "Website integration and testing",
+          "description": "Connect the screens and APIs and test the demo buying flow.",
+          "assigneeId": "DEV01",
+          "deadline": "2026-10-19",
+          "estimatedHours": 6
+        }
+      ]
+    },
+    {
+      "name": "QuickServe Mobile App",
+      "clientName": "QuickServe Services",
+      "description": "Flutter customer demo for login, service booking, and request status. Maps, driver tracking, and payments are excluded.",
+      "managerId": "PM02",
+      "deadline": "2026-10-24",
+      "tasks": [
+        {
+          "title": "Login and profile screens",
+          "description": "Customer login interface and a basic profile screen.",
+          "assigneeId": "DEV03",
+          "deadline": "2026-10-12",
+          "estimatedHours": 8
+        },
+        {
+          "title": "Service booking screens",
+          "description": "Select a service, enter request details, and display confirmation.",
+          "assigneeId": "DEV03",
+          "deadline": "2026-10-17",
+          "estimatedHours": 12
+        },
+        {
+          "title": "Booking and account APIs",
+          "description": "Customer accounts, service requests, and booking status.",
+          "assigneeId": "DEV02",
+          "deadline": "2026-10-16",
+          "estimatedHours": 16
+        },
+        {
+          "title": "Mobile integration and testing",
+          "description": "Connect UI to APIs, display request status, test login through booking and error states.",
+          "assigneeId": "DEV04",
+          "deadline": "2026-10-22",
+          "estimatedHours": 10
+        }
+      ]
+    },
+    {
+      "name": "HelpDeskPro AI Assistant",
+      "clientName": "HelpDeskPro Solutions",
+      "description": "FAQ-grounded support proof of concept with saved human escalation records. No email or ticketing integrations.",
+      "managerId": "PM03",
+      "deadline": "2026-10-22",
+      "tasks": [
+        {
+          "title": "FAQ document processing",
+          "description": "Prepare the supplied FAQ and retrieve relevant content.",
+          "assigneeId": "DEV06",
+          "deadline": "2026-10-13",
+          "estimatedHours": 10
+        },
+        {
+          "title": "Assistant answer generation",
+          "description": "Connect the model to prepared FAQ content; decline unsupported answers.",
+          "assigneeId": "DEV05",
+          "deadline": "2026-10-17",
+          "estimatedHours": 14
+        },
+        {
+          "title": "Human escalation flow",
+          "description": "Save unresolved questions for human review.",
+          "assigneeId": "DEV05",
+          "deadline": "2026-10-18",
+          "estimatedHours": 6
+        },
+        {
+          "title": "Assistant evaluation and testing",
+          "description": "Test supported answers, unsupported questions, and the escalation path.",
+          "assigneeId": "DEV06",
+          "deadline": "2026-10-21",
+          "estimatedHours": 8
+        }
+      ]
+    }
+  ]
+}

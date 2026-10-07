@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 25% 98%; --foreground: 225 28% 15%;
+    --card: 0 0% 100%; --card-foreground: 225 28% 15%;
+    --primary: 226 85% 57%; --primary-foreground: 0 0% 100%;
+    --secondary: 226 75% 96%; --secondary-foreground: 226 65% 40%;
+    --muted: 220 20% 96%; --muted-foreground: 220 13% 42%;
+    --accent: 220 22% 94%; --accent-foreground: 225 28% 15%;
+    --destructive: 0 72% 45%; --destructive-foreground: 0 0% 100%;
+    --border: 220 18% 89%; --input: 220 18% 85%; --ring: 226 85% 57%; --radius: .75rem;
+  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; }
+  ::selection { background: #dbe4ff; color: #14264d; }
+  a, button, input, textarea { -webkit-tap-highlight-color: transparent; }
+  a:focus-visible { @apply rounded outline-none ring-2 ring-primary ring-offset-2; }
+}
+@layer components {
+  .page-title { @apply text-3xl font-semibold tracking-tight sm:text-[2.1rem]; }
+  .page-description { @apply mt-2 text-base leading-relaxed text-muted-foreground; }
+  .avatar { @apply inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary text-sm font-semibold text-secondary-foreground; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[.14em]; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
